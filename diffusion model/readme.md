@@ -1,0 +1,1 @@
+Generate 10 non standard images with huggingface model 
