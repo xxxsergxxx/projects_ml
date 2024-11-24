@@ -1,4 +1,3 @@
-**Task**
 
 Analyze the dataset. Create at least 10 images, graphs, diagrams.
 
