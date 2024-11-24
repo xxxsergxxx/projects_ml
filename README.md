@@ -1,7 +1,7 @@
 # projects_ml
 different ml projects
 
-Different project`s notebooks type are included here such as:
+Different project notebook types are included here such as:
 
 1. numpy
 2. pandas
