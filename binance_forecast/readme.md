@@ -56,11 +56,6 @@ To predict future 5-minute realized volatility using engineered features from pa
 
 ---
 
-## 📈 Visual Example
-
-*(Add a preview plot here if you push images)*
-
----
 
 ## 🚀 Next Steps
 
