@@ -75,7 +75,7 @@ To predict future 5-minute realized volatility using engineered features from pa
 
 ## 🧑‍💻 Author
 
-**Serhii**, Feedmill engineer & Data Scientist  
+**Serhii Kolotukhin**, Feedmill engineer & Data Scientist  
 📍 Focus: ML in finance, process optimization, time series  
 🔗 www.linkedin.com/in/serhii-kolotuhkin-25648a166
 
