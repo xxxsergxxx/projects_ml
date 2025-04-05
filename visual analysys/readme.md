@@ -30,11 +30,6 @@ All tables were merged using player names and birth year after preprocessing.
 - Correlation matrix of performance metrics
 - Top 10 scorers and most efficient players
 
----
-
-## 📊 Sample Visuals
-
-*(Insert 2–3 images of your favorite graphs)*
 
 ---
 
