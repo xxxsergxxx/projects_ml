@@ -119,7 +119,8 @@ Accuracy: 82% Class 0 F1: 0.82 Class 1 F1: 0.81
 pip install scikit-learn pandas matplotlib seaborn category_encoders
 ```
 
-##👨‍🔬 Author
+##🧑‍💻 Author
 
 Serhii Kolotukhin
-Made with 💡 + ☕ during Hillel ML Course
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
