@@ -28,4 +28,8 @@ The dataset used is the well-known **Iris Dataset** containing:
 
 ---
 
-**Author: Serhii Kolotukhin**
+## 🧑‍💻 Author
+
+Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
