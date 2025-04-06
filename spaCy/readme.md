@@ -4,116 +4,66 @@
 
 Binary classification of movie reviews into **positive** or **negative** sentiments using Natural Language Processing (NLP) and Machine Learning.
 
----
+# IMDB Sentiment Classification
 
-## 📁 Dataset
+This project focuses on classifying IMDB movie reviews as **positive** or **negative** using machine learning techniques. The core model is based on **LightGBM**, and performance is further enhanced through a **stacking ensemble** with KNN and SVC as base/meta learners.
 
-**Source:** IMDB Dataset of 50K Movie Reviews  
-**Columns:**
+## 📌 Features
 
-- `review` — raw text of the review  
-- `sentiment` — label: `"positive"` or `"negative"`
+- Text preprocessing with `spaCy` (lemmatization, stopword removal)
+- TF-IDF feature extraction
+- LightGBM model with hyperparameter tuning
+- Stacking classifier with KNN, LightGBM, and SVC
+- Evaluation with accuracy, precision, recall, F1-score, confusion matrix, and ROC-AUC
 
----
+## 📂 Dataset
 
-## 🧼 Data Cleaning & Preprocessing
+- **Source**: [IMDB Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)
+- **Size**: 50,000 labeled reviews (balanced)
+- **Classes**: `positive`, `negative`
 
-- Removed:
-  - HTML tags
-  - URLs
-  - Punctuation
-  - Digits
-- Converted text to lowercase
-- Lemmatization via spaCy
-- Removed stopwords (`spaCy.STOP_WORDS`)
-- Converted target labels:  
-  `"positive"` → `1`, `"negative"` → `0`
+## ⚙️ Model Pipeline
 
-Example of preprocessing:
-- Original: `"One of the other reviewers has mentioned..."`
-- Cleaned: `"one reviewer mention watch oz episode hook ..."`
+1. Clean and preprocess text
+2. Transform using `TfidfVectorizer`
+3. Train LightGBM (tuned with `GridSearchCV`)
+4. Optionally, stack with KNN and SVC for improved performance
 
----
+## 🧪 Results
 
-⚙️ Model Training
-✅ LightGBM Classifier
+| Model           | Accuracy | ROC AUC |
+|----------------|----------|---------|
+| LightGBM       | 0.84     | –       |
+| Stacking Model | 0.88     | 0.95    |
 
-LGBMClassifier(
-    learning_rate=0.069,
-    n_estimators=100,
-    num_leaves=27,
-    random_state=42
-)
+## 🛠 Tech Stack
 
-Best parameters (GridSearchCV):
+- Python
+- scikit-learn
+- LightGBM
+- spaCy
+- seaborn & matplotlib
 
-{"num_leaves": 27}
+## 🚀 How to Run
 
----
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-📊 Evaluation (LightGBM)
+# Run preprocessing and training
+python sentiment_classification.py
+```
 
-Metrics:
+> Note: This project was developed in Google Colab using Jupyter notebooks.
 
-    Accuracy: 0.84
+## 📈 Example Confusion Matrix
 
-    Precision: 0.85 (class 0), 0.83 (class 1)
+```
+[[2190  344]
+ [ 261 2205]]
+```
 
-    Recall: 0.83 (class 0), 0.86 (class 1)
-
-Confusion Matrix:
-
-[[4096  865]
- [ 701 4338]]
-
- 🧠 Stacking Classifier
-
-Base learners:
-
-    KNeighborsClassifier
-
-    LGBMClassifier
-
-Meta-learner:
-
-    SVC
----
-
-📈 Stacking Classifier Results
-
-Metrics:
-
-    Accuracy: 0.88
-
-    Precision: 0.89 (class 0), 0.87 (class 1)
-
-    Recall: 0.86 (class 0), 0.89 (class 1)
-
-    ROC AUC: 0.949
----
-
-📊 Model Comparison
-Model	Accuracy	ROC AUC	Notes
-LightGBM	0.84	–	Fast, simple baseline
-Stacking (KNN + LGBM → SVC)	0.88	0.949	Best performance overall
----
-
-📚 Libraries Used
-
-    spaCy
-
-    scikit-learn
-
-    lightgbm
-
-    matplotlib, seaborn
-
-    TfidfVectorizer, StackingClassifier
----
-
-📌 Notes
-
-    Data cleaned using regex and spaCy
+Serhii Kolotukhin
 
     Text transformed with TF-IDF
 
