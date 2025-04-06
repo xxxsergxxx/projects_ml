@@ -63,7 +63,7 @@ jupyter notebook
 ```
 Or simply open directly in Google Colab 👇
 
-👨‍🔬🧑‍💻 Author
+## 🧑‍💻 Author
 
 Serhii Kolotukhin
 
