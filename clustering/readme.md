@@ -98,4 +98,4 @@ pip install scikit-learn matplotlib seaborn
 
 ## ✍️ Author
 
-Serhii — Feedmill Engineer & Data Scientist
+Serhii Kolotukhin
