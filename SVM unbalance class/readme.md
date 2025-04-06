@@ -107,8 +107,10 @@ An alternative multiclass approach where:
 
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn imbalanced-learn
+```
 
-
-✍️ Author
+## 🧑‍💻 Author
 
 Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
