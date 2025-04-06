@@ -43,18 +43,18 @@ This project demonstrates how to perform sentiment classification (positive/nega
 Epoch 1: val_accuracy = 0.8273
 Epoch 5: val_accuracy = 0.8683
 Best accuracy (epoch 8): 87.4%
-
+```
 
 📦 Requirements
 
 pip install numpy pandas nltk matplotlib tensorflow keras scikit-learn
 
 Make sure to also download the required NLTK resources:
-
+```
 import nltk
 nltk.download('stopwords')
 nltk.download('wordnet')
-
+```
 🧪 Example Prediction (LSTM)
 
 sample_text = "The movie was not cool. But the visuals were amazing."
@@ -74,6 +74,8 @@ print(prediction)
 
     Unbuilt model warning → resolved after .fit() or proper input shape handling.
 
-✍️ Author
+🧑‍💻 Author
 
 Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
