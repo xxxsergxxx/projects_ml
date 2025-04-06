@@ -1,101 +1,94 @@
-🍷 Wine Quality Prediction Project
+# 🍷 Wine Quality Prediction  
 
+## 🔍 Overview
 
-Overview
+This project aims to build machine learning models to predict the quality of wine based on its physicochemical properties. Two datasets are used — **red wine** and **white wine** — with most analysis focused on white wine due to its larger size.
 
-This project focuses on predicting wine quality based on physicochemical tests. Two datasets were analyzed: red wine and white wine, with an emphasis on white wine due to a larger sample size. The project includes full data processing, feature engineering, model training, evaluation, and comparison across multiple regression and classification models.
-Agenda
+---
 
-    Primary Data Analysis
+## 📋 Agenda
 
-        Explored dataset structure, data types, and missing values
+1. **Primary Data Analysis**
+   - Checked for missing values
+   - Inspected data types
+   - Visualized correlations using heatmaps
+   - Detected outliers via boxplots
 
-        Visualized correlations and boxplots for outlier detection
+2. **Feature Engineering**
+   Created three new features to improve predictive power:
+   - `sulfur_ratio` = total sulfur dioxide / free sulfur dioxide  
+   - `acid_ratio` = volatile acidity / fixed acidity  
+   - `total_acid` = sum of all acid-related features
 
-    Feature Engineering
+3. **Feature Scaling**
+   - Standardized features using `StandardScaler`
 
-        Created new features:
+4. **Dataset Splitting**
+   - Train/Test split: 80% / 20%
+   - Red wine dataset was initially considered as validation but later discarded due to feature distribution mismatch
 
-            sulfur_ratio: total sulfur dioxide / free sulfur dioxide
+5. **Model Training (Default)**
+   - Trained models with default hyperparameters
+   - Used pipelines with cross-validation
 
-            acid_ratio: volatile acidity / fixed acidity
+6. **Hyperparameter Tuning**
+   - Tuned parameters for SGD models using `GridSearchCV`
 
-            total_acid: sum of all acidity-related features
+7. **Evaluation & Comparison**
+   - Stored model performance in a `score_store` dictionary
+   - Compared models using R², accuracy, and MAE
 
-    Scaling Features
+---
 
-        Standardized all features using StandardScaler
+## 🤖 Models & Results
 
-    Dataset Splitting
+| Model                        | Evaluation Metric | Score      |
+|-----------------------------|-------------------|------------|
+| Linear Regression           | R² (Test)         | 0.3248     |
+| Logistic Regression         | Accuracy (CV)     | 0.5429     |
+| OLS Regression (Statsmodels)| MAE               | **0.5768** |
+| Poisson Regression          | R² (CV)           | 0.2756     |
+| SGD Regressor (Tuned)       | R² (CV)           | 0.2839     |
+| SGD Regressor (Default)     | R² (Test)         | 0.3225     |
+| SGD Classifier (Tuned)      | Accuracy (CV)     | 0.4449     |
+| SGD Classifier (Default)    | Accuracy (Test)   | 0.4408     |
 
-        Training and testing: 80/20 split
+✅ **OLS regression provided the best MAE performance.**
 
-        Red wine dataset was initially used as validation but later discarded due to domain mismatch
+---
 
-    Model Training (Baseline)
+## 💡 Key Insights
 
-        Trained models with default hyperparameters
+- Feature engineering significantly improved model interpretability
+- Red and white wine datasets are not interchangeable for model validation
+- Default SGDClassifier outperformed the tuned version
+- Simple linear models provide a solid baseline, but more complex models could improve performance
 
-        Used Pipeline and cross_val_score for fair evaluation
+---
 
-    Hyperparameter Tuning
+## 🛠️ Technologies Used
 
-        Used GridSearchCV to optimize hyperparameters for SGD-based models
+- Python 3.10  
+- Google Colab / Jupyter Notebooks  
+- Pandas, NumPy, Matplotlib, Seaborn  
+- Scikit-learn  
+- Statsmodels  
 
-    Model Evaluation
+---
 
-        Used R² score and Mean Absolute Error (MAE) for regression
+## 🚀 Next Steps
 
-        Used accuracy for classification
+- Test ensemble methods like Random Forest, XGBoost  
+- Try PCA or other dimensionality reduction techniques  
+- Build a unified red + white model with a `wine_type` feature  
+- Use classification thresholds for quality groups (e.g., low, medium, high)
 
-        Stored all model scores in a score_store dictionary for comparison
+---
 
-Models and Results
-Model	Metric Used	Score
-Linear Regression	R² (Test)	0.3248
-Logistic Regression	Accuracy (CV)	0.5429
-OLS Regression (StatsModels)	MAE	0.5768
-Poisson Regression	R² (CV)	0.2756
-SGD Regressor (GridSearch)	R² (CV)	0.2839
-SGD Regressor (Default)	R² (Test)	0.3225
-SGD Classifier (GridSearch)	Accuracy (CV)	0.4449
-SGD Classifier (Default)	Accuracy (Test)	0.4408
+## 📬 Contact
 
-➡️ OLS Regression showed the best performance based on mean absolute error.
-Key Insights
+If you have questions or would like to collaborate, feel free to reach out!
 
-    Feature engineering significantly improved model understanding and performance
+**Serhii Kolotukhin**  
 
-    Red wine and white wine datasets are not interchangeable for model validation due to different distributions
-
-    GridSearchCV did not always improve performance; default SGDClassifier outperformed the tuned one
-
-    Linear models performed reasonably, though results suggest room for more complex models like ensembles or neural networks
-
-Technologies Used
-
-    Python 3
-
-    Google Colab / Jupyter
-
-    Pandas, NumPy, Matplotlib, Seaborn
-
-    Scikit-learn
-
-    Statsmodels
-
-Next Steps
-
-    Try ensemble methods (e.g., Random Forest, XGBoost)
-
-    Explore non-linear feature transformations
-
-    Build a combined red+white classification model with a domain feature
-
-Contact
-
-If you have any questions or want to collaborate, feel free to reach out to me!
-
-Serhii Kolotukhin
-
-🇺🇦
+🇺🇦 Ukraine  
