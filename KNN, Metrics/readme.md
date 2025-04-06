@@ -119,7 +119,9 @@ Predicted vs actual values were visualized for both regression and classificatio
 
 ---
 
-## 📌 Author
+## 🧑‍💻 Author
 
-Serhii Kolotukhin 
+Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
 Project created as part of Hillel Machine Learning Course
