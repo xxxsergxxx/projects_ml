@@ -55,15 +55,20 @@ This repository is divided by topic — each folder contains Jupyter notebooks a
 git clone https://github.com/xxxsergxxx/projects_ml.git
 
 # navigate to any topic
+
 cd projects_ml/transformers/
 
 # open notebooks
 jupyter notebook
+```
 Or simply open directly in Google Colab 👇
 
-👨‍🔬 Author
+👨‍🔬🧑‍💻 Author
 
 Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
+
 Feedmill Engineer | Data Scientist | AI Explorer
 📍 GitHub
 💬 Feedback / Collaboration
