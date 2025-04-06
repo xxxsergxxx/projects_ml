@@ -107,5 +107,7 @@ python run_sentiment.py
 
 ---
 
-## 📬 Author
+🧑‍💻 Author
+
 Serhii Kolotukhin
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
