@@ -85,10 +85,8 @@ This project aims to build machine learning models to predict the quality of win
 
 ---
 
-## 📬 Contact
+## 🧑‍💻 Author
 
-If you have questions or would like to collaborate, feel free to reach out!
+Serhii Kolotukhin
 
-**Serhii Kolotukhin**  
-
-🇺🇦 Ukraine  
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
