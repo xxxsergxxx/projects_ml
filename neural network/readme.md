@@ -120,4 +120,8 @@ Although this model performs well, **CNNs would typically outperform this archit
 ---
 
 
-**Author: Serhii Kolotukhin**
+## 🧑‍💻 Author
+
+Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
