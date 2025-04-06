@@ -96,6 +96,8 @@ pip install "git+https://github.com/christopherjenness/DBCV"
 pip install scikit-learn matplotlib seaborn
 ```
 
-## ✍️ Author
+## 🧑‍💻 Author
 
 Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
