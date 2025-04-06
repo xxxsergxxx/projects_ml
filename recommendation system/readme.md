@@ -105,6 +105,8 @@ Using the trained KNN model, it's possible to recommend a restaurant based on th
 
    * Model handles categorical noise and sparsity with robust preprocessing.
 
-📎 Author
+## 🧑‍💻 Author
 
 Serhii Kolotukhin
+
+📍 www.linkedin.com/in/serhii-kolotuhkin-25648a166 | GitHub
