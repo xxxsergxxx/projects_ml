@@ -1,6 +1,6 @@
 # 🧠 MNIST Digit Classification using Feedforward Neural Network (Non-CNN)
 
-**Author: Serhii Kolotukhin**
+
 
 ## 📌 Overview
 
@@ -119,8 +119,5 @@ Although this model performs well, **CNNs would typically outperform this archit
 
 ---
 
-## 📬 Contact
 
-Feel free to reach out if you have questions or want to collaborate!
-
-**Serhii Kolotukhin**  
+**Author: Serhii Kolotukhin**
