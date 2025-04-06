@@ -1,9 +1,3 @@
-# Sentiment Classification using IMDb Dataset
-
-## 📝 Task
-
-Binary classification of movie reviews into **positive** or **negative** sentiments using Natural Language Processing (NLP) and Machine Learning.
-
 # IMDB Sentiment Classification
 
 This project focuses on classifying IMDB movie reviews as **positive** or **negative** using machine learning techniques. The core model is based on **LightGBM**, and performance is further enhanced through a **stacking ensemble** with KNN and SVC as base/meta learners.
@@ -63,10 +57,6 @@ python sentiment_classification.py
  [ 261 2205]]
 ```
 
+## 📬 Author
 Serhii Kolotukhin
 
-    Text transformed with TF-IDF
-
-    Model stacking improves results
-
-    LightGBM is a strong baseline
