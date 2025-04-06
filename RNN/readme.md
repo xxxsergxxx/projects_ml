@@ -76,4 +76,4 @@ print(prediction)
 
 ✍️ Author
 
-Serhii — Feedmill Engineer & Data Scientist
+Serhii Kolotukhin
